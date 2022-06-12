@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @jiuxiang-john
-- 👀 I’m interested in python (20220612),javaweb
+- 👀 I’m interested in python (20220612)、javaweb
 - 🌱 I’m currently learning python
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me 
