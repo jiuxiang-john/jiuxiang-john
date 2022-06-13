@@ -1,0 +1,16 @@
+citys=['a新疆','f西藏','x成都','q重庆','t厦门']
+print(citys)
+# 排序动作
+citys.sort(reverse=True)
+print(citys)
+print(sorted(citys))
+
+sorted(citys,reverse=True)
+print(citys)
+citys.reverse()
+print(citys)
+print(len(citys))
+print(citys[-1])
+# 循环变量列表元素
+for cityss in citys:
+    print('城市：'+cityss)
