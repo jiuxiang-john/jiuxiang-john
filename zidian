@@ -1,0 +1,67 @@
+# 初始化定义字典
+alien0 = {'color': 'green', 'point': 5}
+alien1 = {'color': 'red', 'point': 10}
+alien2 = {'color': 'yellow', 'point': 15}
+# 定义一个列表用户存在 多个字典元素信息
+# [{'color': 'green', 'point': 5}, {'color': 'red', 'point': 10}, {'color': 'yellow', 'point': 15}]
+aliens = [alien0, alien1, alien2]
+# 打印 列表-字典 信息
+print(aliens)
+for alien in aliens:
+    print(alien)
+#
+aliens = []
+for number in range(0, 30):
+    new_aliens = {'color': 'green', 'point': 5}
+    aliens.append(new_aliens)
+print(aliens)
+for alien in aliens[0:3]:
+    print(alien)
+    print('---')
+    if alien['color'] == 'green':
+        alien['color'] = 'bule'
+    elif alien['color'] == 'red':
+        alien['point'] = 40
+for alien in aliens[0:5]:
+    print(alien)
+print('........')
+# 打印 字典-列表 信息
+
+pizz = {'user': 'john',
+        'topping': ['hujiaofei', 'lajiao', 'xiangyou']
+        }
+print('You ordered a -' + pizz['user'] + '- with the following topping:'
+      )
+for top in pizz['topping']:
+    print('\t' + top)
+
+favorite_languages = {
+    'jen': ['java', 'python', 'c'],
+    'dal': ['c'],
+    'oop': ['java', 'c'],
+    'phil': ['java', 'c#', 'c'],
+}
+for name, lanages in favorite_languages.items():
+    if len(lanages) == 1:
+        print(name.title() + 'favorite language2222 are:')
+    else:
+        print(name.title() + 'favorite languages are:')
+    for lanage in lanages:
+        print('\t' + lanage)
+# 打印 字典-字典 信息
+users = {
+    'john': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+    },
+    'mucrie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+    },
+}
+# 取值 字典 直接通过key 键就行，不用循环
+for usernames ,user_info in users.items():
+    print('\nname:'+usernames.title())
+    print('\t用户信息:'+user_info['first'])
